@@ -16,3 +16,39 @@ body{
     background-color:  rgb(22, 22, 22);
     height:4vw; 
 }
+#btn1{
+    background-color: rgb(15, 11, 73);
+    height:23vw;
+    margin: 2vw 0vw 0vw 3vw;
+    border:5px solid black;
+    border-top-left-radius: 25vw;
+    cursor: pointer;
+    z-index:1;
+}
+#btn2{
+    background-color: rgb(68, 4, 4);
+    height:23vw;
+    margin: 2vw 0vw 0vw 0vw;
+    border:5px solid black;
+    border-top-right-radius: 25vw;
+    cursor: pointer;
+    z-index:1;
+}
+#btn3{
+    background-color: rgb(8, 44, 0);
+    height:23vw;
+    margin: 0vw 0vw 0vw 3vw;
+    border:5px solid black;
+    border-bottom-left-radius: 25vw;
+    cursor: pointer;
+    z-index:1;
+}
+#btn4{
+    background-color: rgb(78, 95, 2);
+    height:23vw;
+    margin: 0vw 0vw 0vw 0vw;
+    border:5px solid black;
+    border-bottom-right-radius: 25vw;
+    cursor: pointer;
+    z-index:1;
+}
