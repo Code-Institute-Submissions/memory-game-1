@@ -9,18 +9,23 @@
     <title>Memory Game</title>
 </head>
 <body>
-    <div class="item1">
-        <div class="btn1" id="btn1"></div>
-        <div class="btn2" id="btn2"></div>
-        <div class="btn3" id="btn3"></div>
-        <div class="btn4" id="btn4"></div>
+    <div class="item1 col-xs-12 col-sm-7 col-md-7 col-lg-7">
+      <div class="over col-xs-4"><p class = "middle col-xs-12">Memory Game</p></div>
+        <div class="btn1 col-xs-5 col-sm-5 col-md-5 col-lg-5" id="btn1"></div>
+        <div class="btn2 col-xs-5 col-sm-5 col-md-5 col-lg-5" id="btn2"></div>
+        <div class="btn3 col-xs-5 col-sm-5 col-md-5 col-lg-5" id="btn3"></div>
+        <div class="btn4 col-xs-5 col-sm-5 col-md-5 col-lg-5" id="btn4"></div>
+      </div>
     </div>
-    <div class="item2">
-        <button class="alpha" id="alphaButton">Click to play</button>
-        <div class="alphaOne" id="alphaScore"></div>
-        
+    
+    <div class = "item2 col-xs-12 col-sm-5 col-md-5 col-lg-5" >
+        <button class="alpha col-sm-4" id="alphaButton">Click to play</button>
+        <div class="alphaOne col-xs-4" id="alphaScore">Your score is 0</div>
+        <div class="alphaTwo col-xs-4" id="alphaTiming">seconds remain:</div>
     </div>
+    
     <div class="item3"></div>
+    
     <script src="main.js"></script>
 </body>
 </html>
