@@ -1,7 +1,9 @@
+
 body{
     background-color: rgb(22, 22, 22);
     overflow:hidden;
 }
+
 .item1{
     background-color: rgb(22, 22, 22);
     height:51vw;
@@ -15,6 +17,30 @@ body{
 .item3{
     background-color:  rgb(22, 22, 22);
     height:4vw; 
+}
+.over{
+    position:absolute;
+    background-color: rgb(36, 36, 36);
+    height:20vw;
+    left:18vw;
+    top:15vw;
+    border-radius:10vw;
+    background-image: radial-gradient(circle, rgb(48, 48, 48), rgb(0, 0, 0));
+    text-align: center;
+    z-index:3;
+}
+.over:hover {
+    background-image: radial-gradient(circle, rgb(29, 29, 29), rgb(0, 0, 0));
+    
+  }
+.middle{
+    font-size:3vw;
+    color: white;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    text-shadow: .4vw .4vw 0vw rgb(0, 0, 0);
+    top:8vw;
+    margin:0;
+    padding:0;
 }
 #btn1{
     background-color: rgb(15, 11, 73);
@@ -52,3 +78,143 @@ body{
     cursor: pointer;
     z-index:1;
 }
+.alpha{
+    width:100%;
+    height:10vw;
+    font-size:3vw;
+    border-radius:2vw;
+    margin-top:3vw;
+    color: #ff0000;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    background-color: rgb(56, 1, 1);
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    border: 5px solid rgb(102, 1, 1);
+    
+}
+.alpha:hover {
+    background-color: #6e0000;
+    color: #cea520;
+  }
+.alphaOne{
+    width:100%;
+    text-align: center;
+    color: red;
+    font-size: 3vw;
+    margin-top:5vw;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    border: 5px solid rgb(102, 1, 1);
+    background-color: rgb(56, 1, 1);
+    border-radius: 1vw;
+    user-select: none;
+    overflow: hidden;
+}
+.alphaTwo{
+    width:100%;
+    text-align: center;
+    margin-top:5vw;
+    color: red;
+    font-size: 3vw;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    border: 5px solid rgb(102, 1, 1);
+    border-radius: 1vw;
+    background-color: rgb(56, 1, 1);
+    user-select: none;
+}
+
+.success {
+    background-color: green !important;
+  }
+  
+  .blue {
+    background-color: rgb(29, 44, 252) !important;
+  }
+  
+  .red {
+    background-color: rgb(252, 29, 29) !important;
+  }
+  
+  .green {
+    background-color: rgb(4, 165, 31) !important;
+  
+  }
+  
+  .yellow {
+    background-color: rgb(192, 252, 29) !important;
+  }
+  @media screen and (max-width:765px){
+    .item1{
+        
+        height:80vw;
+    }
+    #btn1{
+        height:39vw;
+        margin: 4vw 0vw 0vw 6vw;
+        border-top-left-radius: 39vw;
+    }
+    #btn2{
+        
+        height:39vw;
+        margin: 4vw 0vw 0vw 0vw;
+        border-top-right-radius: 39vw;
+    }
+    #btn3{
+        height:39vw;
+        margin: 0vw 0vw 0vw 6vw;
+        border-bottom-left-radius: 39vw;
+        
+       
+    }
+    #btn4{
+        height:39vw;
+        margin: 0vw 0vw 0vw 0vw;
+        border-bottom-right-radius: 39vw;
+    }
+    .over{
+        height:35vw;
+        left:32vw;
+        top:25vw;
+        border-radius:20vw;
+        text-align: center;
+    }
+    .item2{ 
+        height:80vw;  
+    }
+    .alpha{
+        width:100%;
+        height:19vw;
+        font-size: 5vw;
+    }
+    .alphaTwo{
+        width:100%;
+        height:10vw;
+        margin-top:2vw;
+        font-size: 5vw;   
+        border: 5px solid rgb(102, 1, 1);
+        border-radius: 1vw;
+    }
+    .alphaOne{
+        width:100%;
+        height:10vw;
+        font-size: 5vw;
+        margin-top:2vw;
+        border: 5px solid rgb(102, 1, 1);
+        border-radius: 1vw;
+    }
+    .middle{
+        font-size:5vw;
+        top:14vw;
+        margin:0;
+        padding:0;
+    }
+
+  }
+  @media screen and (max-height:824px){
+    .alphaOne{
+        margin-top:15vw;
+    }
+    .alphaTwo{
+        margin-top:15vw;
+    }
+  }
