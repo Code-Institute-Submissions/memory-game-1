@@ -40,7 +40,8 @@ function randomButtons() {
     }
 }
 alphaButton.addEventListener("click",function(){
-    randomButtons()
+    randomButtons();
+    setTimeout(function(){arr1 = []},1000)
 })
 
 
