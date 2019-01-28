@@ -192,8 +192,7 @@ alphaButton.addEventListener("click", function() {
     counter = 0;
     arrBtn1 = [];
     arrClick1 = [];
-    arrCompare1 = [];
-    arrCompare2 = [];
+
 });
 
 click1();
