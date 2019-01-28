@@ -90,6 +90,33 @@ function randomLight() {
     }, randomNumber2 + randomNumber3);
 }
 
+function timing() {
+    var timeTo0 = 20;
+    var timerInt = setInterval(timer, 1000);
+
+    function timer() {
+        if (timeTo0 === 0) {
+            clearTimeout(timerInt);
+            div2.innerHTML = timeTo0 + ' seconds remain';
+            reload1();
+        } else {
+            div2.innerHTML = timeTo0 + ' seconds remain';
+            timeTo0--;
+        }
+        if (arrStop[0] === "stop") {
+            clearTimeout(timerInt);
+            timeTo0 = 0;
+            div2.innerHTML = timeTo0 + ' seconds remain';
+        }
+    }
+}
+
+function reload1() {
+    location.reload();
+}
+
+
+
 
 function click1() {
     btn1.addEventListener("click", function() {
