@@ -1,5 +1,3 @@
-
-
 var alphaButton = document.getElementById('alphaButton');
 var counter = 0;
 var arrBtn1 = [];
@@ -30,62 +28,69 @@ function randomLight() {
     var randomNumber2 = Math.floor(Math.random() * 2 + 1);
     var randomNumber3 = Math.floor(Math.random() * 2 + 1);
 
-    if(score<2){randomNumber3 = randomNumber3 * 200;
-    randomNumber2 = randomNumber2 * 500;
-    }
-    if(score>=2&&score<=4){randomNumber3 = randomNumber3 * 500;
+    if (score < 2) {
+        randomNumber3 = randomNumber3 * 200;
         randomNumber2 = randomNumber2 * 500;
     }
-    if(score>4&&score<=20){randomNumber3 = randomNumber3 * 1000;
+    if (score >= 2 && score <= 4) {
+        randomNumber3 = randomNumber3 * 500;
         randomNumber2 = randomNumber2 * 500;
     }
-    if(score>20&&score<=30){randomNumber3 = randomNumber3 * 1000;
+    if (score > 4 && score <= 20) {
+        randomNumber3 = randomNumber3 * 1000;
+        randomNumber2 = randomNumber2 * 500;
+    }
+    if (score > 20 && score <= 30) {
+        randomNumber3 = randomNumber3 * 1000;
         randomNumber2 = randomNumber2 * 400;
     }
-    if(score>30&&score<=40){randomNumber3 = randomNumber3 * 1000;
+    if (score > 30 && score <= 40) {
+        randomNumber3 = randomNumber3 * 1000;
         randomNumber2 = randomNumber2 * 350;
     }
-    if(score>40){randomNumber3 = randomNumber3 * 1500;
+    if (score > 40) {
+        randomNumber3 = randomNumber3 * 1500;
         randomNumber2 = randomNumber2 * 350;
     }
 
-    var interval1 = setInterval(function () {
+    var interval1 = setInterval(function() {
         randomButtons();
         if (arr1[0] === btn1) {
             arr1[0].classList.add('blue');
-            setTimeout(function () {
+            setTimeout(function() {
                 btn1.classList.remove('blue');
             }, 200);
         }
         if (arr1[0] === btn2) {
             arr1[0].classList.add('red');
-            setTimeout(function () {
+            setTimeout(function() {
                 btn2.classList.remove('red');
             }, 200);
         }
         if (arr1[0] === btn3) {
             arr1[0].classList.add('green');
-            setTimeout(function () {
+            setTimeout(function() {
                 btn3.classList.remove('green');
             }, 200);
         }
         if (arr1[0] === btn4) {
             arr1[0].classList.add('yellow');
-            setTimeout(function () {
+            setTimeout(function() {
                 btn4.classList.remove('yellow');
             }, 200);
         }
         clasa();
         arr3.push(arr1[0]);
-        setTimeout(function () {
+        setTimeout(function() {
             arr3.shift();
             arr1.shift();
-           
+
         }, 200);
 
-    }, randomNumber2 );
-    setTimeout(function () {
-        clearInterval(interval1); timing();
+    }, randomNumber2);
+    setTimeout(function() {
+        clearInterval(interval1);
+        timing();
     }, randomNumber2 + randomNumber3);
 }
 
@@ -100,7 +105,8 @@ function timing() {
             clearTimeout(timerInt);
             div2.innerHTML = timeTo0 + ' seconds remain';
             reload1();
-        } else {
+        }
+        else {
             div2.innerHTML = timeTo0 + ' seconds remain';
             timeTo0--;
         }
@@ -118,10 +124,10 @@ function reload1() {
 
 
 function click1() {
-    btn1.addEventListener("click", function () {
+    btn1.addEventListener("click", function() {
         arrClick1.push('btn1');
         btn1.style.backgroundColor = "#000";
-        setTimeout(function () {
+        setTimeout(function() {
             btn1.style.backgroundColor = "rgb(8, 8, 75)";
         }, 30);
         validate();
@@ -129,10 +135,10 @@ function click1() {
 }
 
 function click2() {
-    btn2.addEventListener("click", function () {
+    btn2.addEventListener("click", function() {
         arrClick1.push('btn2');
         btn2.style.backgroundColor = "#000";
-        setTimeout(function () {
+        setTimeout(function() {
             btn2.style.backgroundColor = "rgb(68, 4, 4)";
         }, 30);
         validate();
@@ -140,10 +146,10 @@ function click2() {
 }
 
 function click3() {
-    btn3.addEventListener("click", function () {
+    btn3.addEventListener("click", function() {
         arrClick1.push('btn3');
         btn3.style.backgroundColor = "#000";
-        setTimeout(function () {
+        setTimeout(function() {
             btn3.style.backgroundColor = "rgb(8, 44, 0)";
         }, 30);
         validate();
@@ -151,10 +157,10 @@ function click3() {
 }
 
 function click4() {
-    btn4.addEventListener("click", function () {
+    btn4.addEventListener("click", function() {
         arrClick1.push('btn4');
         btn4.style.backgroundColor = "#000";
-        setTimeout(function () {
+        setTimeout(function() {
             btn4.style.backgroundColor = "rgb(87, 81, 7)";
         }, 30);
         validate();
@@ -177,7 +183,7 @@ function clasa() {
     }
     if (btn4.className == 'btn4 col-xs-5 col-sm-5 col-md-5 col-lg-5 yellow') {
         arrBtn1.push('btn4');
-      console.log(`Buttons generated by game ${arrBtn1}`);
+        console.log(`Buttons generated by game ${arrBtn1}`);
     }
 }
 
@@ -185,19 +191,19 @@ function clasa() {
 
 
 function validate() {
-if( JSON.stringify(arrBtn1)==JSON.stringify(arrClick1)&&
-    arrBtn1.length===arrClick1.length){
+    if (JSON.stringify(arrBtn1) == JSON.stringify(arrClick1) &&
+        arrBtn1.length === arrClick1.length) {
         btn1.classList.add('success');
         btn2.classList.add('success');
         btn3.classList.add('success');
         btn4.classList.add('success');
         arrStop.push('stop');
-        setTimeout(function () {
+        setTimeout(function() {
             btn1.classList.remove('success');
             btn2.classList.remove('success');
             btn3.classList.remove('success');
             btn4.classList.remove('success');
-            counterMainButton=0;
+            counterMainButton = 0;
             alphaButton.disabled = false;
             arrBtn1 = [];
             arrClick1 = [];
@@ -205,8 +211,8 @@ if( JSON.stringify(arrBtn1)==JSON.stringify(arrClick1)&&
             score++;
             div1.innerHTML = `Your score is ${score}`;
         }, 1000);
-    
-}
+
+    }
     console.log(`Buttons clicked by player ${arrClick1}`);
     console.log(`Buttons generated by game ${arrBtn1}`);
 }
@@ -214,15 +220,15 @@ if( JSON.stringify(arrBtn1)==JSON.stringify(arrClick1)&&
 
 
 
-alphaButton.addEventListener("click", function () {
+alphaButton.addEventListener("click", function() {
     counterMainButton++;
-    setTimeout(function () {
+    setTimeout(function() {
         alphaButton.style.backgroundColor = "#000";
     }, 10);
-    setTimeout(function () {
+    setTimeout(function() {
         alphaButton.style.backgroundColor = "";
     }, 20);
-if(counterMainButton>0){alphaButton.disabled = true; }
+    if (counterMainButton > 0) { alphaButton.disabled = true; }
 
     randomLight();
     counter = 0;
