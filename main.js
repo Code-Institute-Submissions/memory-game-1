@@ -1,5 +1,7 @@
-
 var alphaButton = document.getElementById('alphaButton');
+var counter = 0;
+var arrBtn1 = [];
+var arrClick1 = [];
 var btn1 = document.getElementById('btn1');
 var btn2 = document.getElementById('btn2');
 var btn3 = document.getElementById('btn3');
@@ -9,6 +11,9 @@ var div2 = document.getElementById('alphaTiming');
 var arr0 = [btn1, btn2, btn3, btn4];
 var arr1 = [];
 var arr3 = [];
+var arrStop = [];
+var score = 0;
+var counterMainButton = 0;
 
 function randomButtons() {
     var randomNumber1 = Math.floor(Math.random() * 4);
