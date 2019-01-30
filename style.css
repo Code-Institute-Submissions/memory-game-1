@@ -223,11 +223,3 @@ body {
 
 }
 
-@media screen and (max-height:824px) {
-    .alphaOne {
-        margin-top: 15vw;
-    }
-    .alphaTwo {
-        margin-top: 15vw;
-    }
-}
