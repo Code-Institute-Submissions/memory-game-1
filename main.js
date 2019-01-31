@@ -37,15 +37,15 @@ function randomLight() {
     var randomNumber2 = Math.floor(Math.random() * 2 + 1);
     var randomNumber3 = Math.floor(Math.random() * 2 + 1);
 
-    if (score < 2) {
+    if (score < 1) {
         randomNumber3 = randomNumber3 * 200;
         randomNumber2 = randomNumber2 * 500;
     }
-    if (score >= 2 && score <= 3) {
+    if (score >= 1 && score <= 2) {
         randomNumber3 = randomNumber3 * 500;
         randomNumber2 = randomNumber2 * 500;
     }
-    if (score > 3 && score <= 20) {
+    if (score > 2 && score <= 20) {
         randomNumber3 = randomNumber3 * 1000;
         randomNumber2 = randomNumber2 * 500;
     }
@@ -259,5 +259,3 @@ click1();
 click2();
 click3();
 click4();
-
-
