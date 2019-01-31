@@ -5,7 +5,7 @@
 From the three projects I have chosen to build a game inspired by Simon Game.
 First I had to decide what do i need to make this project work.
 
-###From looking at an online version of the game I needed first to get done the following:
+### From looking at an online version of the game I needed first to get done the following:
 
 I needed four buttons programmed to change colours in a random sequence and record the sequence and 
 a way for the player to match the sequence.I also decided to make the game to
@@ -31,7 +31,7 @@ Next, please read about the game flow:
  ### CSS:
  
  
- ###Javascript:
+ ### Javascript:
  Once the player clicks the "Click to play" button, a random number is generated(from 1 to 4) that is paired with the values of
  arr0. This takes a random button from the array and pushes it in another array.In the same time there is a setInterval that combined with 
  setTimeouts makes a sequence of random buttons played of a random number of times (from 1 - 10, depending of level of difficulty)
