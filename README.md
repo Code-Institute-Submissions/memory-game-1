@@ -38,7 +38,7 @@ Next, please read about the game flow:
  setTimeouts makes a sequence of random buttons played of a random number of times (from 1 - 10, depending of level of difficulty).
  The game adds a class to the buttons generated in arr1.Using a timeout the class is removed shortly.Then the values are pushed into arrbtn1
  At that time a timer starts and the player has 20 seconds to guess the correct combination.
- The player is expected to match the sequence ** in the same order ** .Once a button is clicked , the value is pushed into arrClick1.
- The two arrays are compared (elements,length,order), using JSON.stringify.
+ The player is expected to match the sequence **in the same order** .Once a button is clicked , the value is pushed into arrClick1.
+ The two arrays are compared (elements,length,order), using **JSON.stringify**.
  
  
