@@ -1,6 +1,7 @@
 # Memory game inspired by Simon Game #
 
 ## Hello and thank you for reading this page and give a try to this game.
+## Because this is not a clone of Simon Game , game flow will be different!
 
 From the three projects I have chosen to build a game inspired by Simon Game.
 First I had to decide what do i need to make this project work.
