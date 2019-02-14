@@ -18,6 +18,8 @@ and to record it. I've chosen to use **CSS** classes for that.
 Using  setInterval and SetTimeOut as well as random numbers the game is pushing values into an array .That array is
 compared with another array that keeps the values of the clicked buttons by the player.If the conditions are met
 the player gets the score increased by one and the game continues.
+I have added a reset button that is displayed only when the player gets the wrong combination,
+this way the player doesn't have to wait until the timer ends.
 Next, please read about the game flow:
 
 ### HTML:
@@ -31,6 +33,10 @@ Next, please read about the game flow:
  
  ### CSS:
  
+ I have used border-radius property for divs to get the  quarter-circles .
+ I have used user-select-none to get rid of the blue outer margins.
+ Media queries used for repositioning for small devices.
+ 
  
  ### Javascript:
  Once the player clicks the "Click to play" button, a random number is generated(from 1 to 4) that is paired with the values of
@@ -41,4 +47,8 @@ Next, please read about the game flow:
  The player is expected to match the sequence **in the same order** .Once a button is clicked , the value is pushed into arrClick1.
  The two arrays are compared (elements,length,order), using **JSON.stringify**.
  
+ 
+ ### Testing:
+ 
+ I have tested the responsivness using google developer tools the provided small devices:
  
