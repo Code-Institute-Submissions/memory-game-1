@@ -57,7 +57,7 @@ Next, please read about the game flow:
  Iphone 6/7/8 plus, Iphone X,Ipad,Ipad Pro, as well as small and normal desktops.
  I have tested this game extensively until a score of 100 , I have tested the behaviour when giving wrong combinations, seems to work
  properly.
- For testing purposes I have left  console log comments to be able to see the game generated sequences and the player generated sequences.
+ **For testing purposes I have left  console log comments to be able to see the game generated sequences and the player generated sequences.**
  Good luck testing your short-term memory!
  
- ###I wish you all a good experience using this game!
+ ### I wish you all a good experience using this game!
