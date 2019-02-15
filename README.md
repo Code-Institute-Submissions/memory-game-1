@@ -61,3 +61,5 @@ Next, please read about the game flow:
  Good luck testing your short-term memory!
  
  ### I wish you all a good experience using this game!
+  Deployed project: [GitHub Pages](https://flo0909.github.io/memory-game/)
+  Source code: [GitHub Pages](https://github.com/flo0909/memory-game) 
