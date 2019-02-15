@@ -1,7 +1,7 @@
 # Memory game inspired by Simon Game #
 
 ## Hello and thank you for reading this page and give a try to this game.
-## Because this is not a clone of Simon Game , game flow will be different!
+## Because this is not a 100% copy of Simon Game , game flow will be a bit different!
 
 From the three projects I have chosen to build a game inspired by Simon Game.
 First I had to decide what do i need to make this project work.
@@ -15,7 +15,7 @@ The player could after that play the next sequence.This I felt gives the player 
 the next sequence when the game gets really hard and also to take a short break anytime.
 For the JS code, I've decided to use vanilla **Javascript** .I needed a way to make the buttons to change colors
 and to record it. I've chosen to use **CSS** classes for that.
-Using  setInterval and SetTimeOut as well as random numbers the game is pushing values into an array .That array is
+Using  setInterval and setTimeOut as well as random numbers the game is pushing values into an array .That array is
 compared with another array that keeps the values of the clicked buttons by the player.If the conditions are met
 the player gets the score increased by one and the game continues.
 I have added a reset button that is displayed only when the player gets the wrong combination,
@@ -46,9 +46,13 @@ Next, please read about the game flow:
  At that time a timer starts and the player has 20 seconds to guess the correct combination.
  The player is expected to match the sequence **in the same order** .Once a button is clicked , the value is pushed into arrClick1.
  The two arrays are compared (elements,length,order), using **JSON.stringify**.
+ If the player gets the correct combination,a "success" class is added to all game buttons and the game can continue.
+ The player is expected to press on the "Click to play" button for a new sequence.
+ If the player gets the wrong combination, the game displays a button that replaces the alphaThree div , where the game can be reset without 
+ the need to wait until the countdown gets to zero.
  
  
  ### Testing:
- 
- I have tested the responsivness using google developer tools the provided small devices:
+ I have tested the responsivness using google developer tools the provided small devices: Galaxy S5,Pixel2,Pixe2 XL,Iphone 5/SE,Iphone 6/7/8,
+ Iphone 6/7/8 plus, Iphone X,Ipad,Ipad Pro, as well as small and normal desktops.
  
