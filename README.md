@@ -63,3 +63,5 @@ Next, please read about the game flow:
  ### I wish you all a good experience using this game!
   Deployed project: [GitHub Pages](https://flo0909.github.io/memory-game/)
   Source code: [GitHub](https://github.com/flo0909/memory-game) 
+  
+ ### Credits to "Simon Game" creators! 
