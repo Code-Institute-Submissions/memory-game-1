@@ -40,11 +40,7 @@ function randomLight() {
         randomNumber3 = randomNumber3 * 200;
         randomNumber2 = randomNumber2 * 500;
     }
-    if (score >= 1 && score <= 2) {
-        randomNumber3 = randomNumber3 * 500;
-        randomNumber2 = randomNumber2 * 500;
-    }
-    if (score > 2 && score <= 20) {
+    if (score >= 1 && score <= 20) {
         randomNumber3 = randomNumber3 * 1000;
         randomNumber2 = randomNumber2 * 500;
     }
@@ -87,7 +83,7 @@ function randomLight() {
                 btn4.classList.remove('yellow');
             }, 200);
         }
-        classCheck()
+        classCheck();
         arr3.push(arr1[0]);
         setTimeout(function() {
             arr3.shift();
